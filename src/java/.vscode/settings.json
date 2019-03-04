@@ -1,0 +1,9 @@
+{
+  "azureFunctions.projectRuntime": "~2",
+  "azureFunctions.projectLanguage": "Java",
+  "azureFunctions.templateFilter": "Verified",
+  "azureFunctions.deploySubpath": "target/azure-functions/serverless-draw-20190303140149500/",
+  "azureFunctions.preDeployTask": "package",
+  "debug.internalConsoleOptions": "neverOpen",
+  "java.configuration.updateBuildConfiguration": "interactive"
+}
