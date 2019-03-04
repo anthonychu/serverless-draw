@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=900, initial-scale=1.0" />
+  <title>Serverless Draw</title>
+
+  <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+</head>
+
+<body>
+
+  <style>
+    body {
+      background-color: #fff;
+      margin: 20px;
+    }
+    #draw-canvas {
+      background-color: #ddd;
+    }
+  </style>
+
+  <div>
+    <input type="color" id="color" value="#000000" />
+    <input type="button" id="clear" value="Clear" />
+  </div>
+  <div>
+    <canvas id="draw-canvas" height="500" width="800"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@aspnet/signalr@1.1.0/dist/browser/signalr.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.18.0/dist/axios.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
