@@ -4,7 +4,7 @@ var apiBaseUrl = 'http://localhost:7071'
 
 var connection = new signalR.HubConnectionBuilder()
   .withUrl(`${apiBaseUrl}/api`)
-  .build();
+  .build()
 connection.on('newStrokes', drawStrokes)
 connection.on('clearCanvas', clearCanvas)
 connection.start()

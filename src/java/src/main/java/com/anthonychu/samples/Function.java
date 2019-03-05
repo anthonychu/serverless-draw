@@ -32,7 +32,7 @@ public class Function {
                 hubName = "serverlessdraw") OutputBinding<SignalRMessage> signalRMessage) {
 
         StrokeCollection strokeCollection = req.getBody();
-        SignalRMessage msg = new SignalRMessage("newStrokes", strokeCollection, "poop");
+        SignalRMessage msg = new SignalRMessage("newStrokes", strokeCollection);
         signalRMessage.setValue(msg);
     }
 
