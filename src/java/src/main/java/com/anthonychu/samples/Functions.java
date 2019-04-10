@@ -8,18 +8,6 @@ import com.microsoft.azure.functions.signalr.*;
 import com.microsoft.azure.functions.signalr.annotation.*;
 
 public class Functions {
-    @FunctionName("negotiate")
-    public SignalRConnectionInfo negotiate(
-            @HttpTrigger(
-                name = "req",
-                methods = { HttpMethod.POST },
-                authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage<Optional<String>> req,
-            @SignalRConnectionInfoInput(
-                name = "connectionInfo",
-                hubName = "serverlessdraw") SignalRConnectionInfo connectionInfo) {
-
-        return connectionInfo;
-    }
 
     @FunctionName("draw")
     public void draw(
