@@ -17,6 +17,7 @@ public class Functions {
             @SignalRConnectionInfoInput(
                 name = "connectionInfo",
                 hubName = "serverlessdraw") SignalRConnectionInfo connectionInfo) {
+
         return connectionInfo;
     }
 
