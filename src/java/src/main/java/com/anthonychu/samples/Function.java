@@ -1,7 +1,6 @@
 package com.anthonychu.samples;
 
 import java.util.*;
-import java.util.stream.Stream;
 
 import com.microsoft.azure.functions.annotation.*;
 import com.microsoft.azure.functions.*;
