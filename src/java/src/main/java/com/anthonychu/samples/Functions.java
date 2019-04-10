@@ -7,7 +7,7 @@ import com.microsoft.azure.functions.*;
 import com.microsoft.azure.functions.signalr.*;
 import com.microsoft.azure.functions.signalr.annotation.*;
 
-public class Function {
+public class Functions {
     @FunctionName("negotiate")
     public SignalRConnectionInfo negotiate(
             @HttpTrigger(
